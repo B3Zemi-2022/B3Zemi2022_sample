@@ -31,25 +31,25 @@ public class Main extends JFrame {
     setVisible( true );
 
     m_canvas.addMouseListener(
-            new MouseAdapter() {
-              @Override
-              public void mouseClicked(MouseEvent e) {
-                if (m_controlPoints.size() < MAX_CONTROL_POINTS) {
-                  Point2D.Double p = new Point2D.Double(e.getX(), e.getY());
+      new MouseAdapter() {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+          if (m_controlPoints.size() < MAX_CONTROL_POINTS) {
+            Point2D.Double p = new Point2D.Double(e.getX(), e.getY());
 
-                  // 打った点をリストに追加する
-                  m_controlPoints.add(p);
-                  // 打った点を描画する
-                  drawPoint(p.getX(), p.getY());
+            // 打った点をリストに追加する
+            m_controlPoints.add(p);
+            // 打った点を描画する
+            drawPoint(p.getX(), p.getY());
 
-                  // 点が揃ったら
-                  if (m_controlPoints.size() == MAX_CONTROL_POINTS) {
-                    // ベジェ曲線を描画
-                    drawBezierCurve();
-                  }
-                }
-              }
+            // 点が揃ったら
+            if (m_controlPoints.size() == MAX_CONTROL_POINTS) {
+              // ベジェ曲線を描画
+              drawBezierCurve();
             }
+          }
+        }
+      }
     );
   }
 
