@@ -37,5 +37,7 @@ git clone {コピーしたURL}
 手順1でインストールしたIntelliJを開きます。どこかしらにプロジェクトを開くみたいな項目があると思うので（分からなかったら聞いてください）、"B3Zemi2022_sample"フォルダを選択して開きます。
 
 ## 5. IntelliJ内でJava SDKをインストール
+IntelliJの上部のメニューからFile->Project Structureへと進みます。SDKを選択する部分をクリックし、+ Add SDK->Download JDKへと進みます。出てきたダイアログでversionを11に、vendorをお好み（おすすめはAmazon CorettoかAzul Zulu）に設定し、Downloadをクリックします。ダウンロードには少し時間がかかります（IntelliJウィンドウ右下でダウンロード状況が見れると思います）。
 
 ## 6. 実行
+プログラムはIntelliJウィンドウ右上の◁ボタンで実行できると思います。できそうでなければ、IntelliJ左側のProject->B3Zemi2022_sample/src/main/java/.../Main.javaを右クリックで、Run 'Main:main()'をクリックして実行します。クリックで最大3つの点を打てるプログラムが立ち上がれば完了です。お疲れ様でした。
