@@ -95,7 +95,7 @@ public class Main extends JFrame {
 	private List<Point2D.Double> m_controlPoints = new ArrayList<>();
 
 	/** 点の数の上限
-	 * （[MAX_CONTROL_POINTS]個 点を打つと、[MAX_CONTROL_POINTS - 1]次のベジェ曲線が描かれる）
+	 * （[MAX_CONTROL_POINTS]個の点を打つと、[MAX_CONTROL_POINTS - 1]次のベジェ曲線が描かれる）
 	 */
 	private static final int MAX_CONTROL_POINTS = 3;
 
